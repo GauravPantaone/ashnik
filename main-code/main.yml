@@ -1,7 +1,6 @@
 ---
 - name: Ping all hosts
   hosts: all
-  tasks:
-    - name: Ensure hosts are reachable
-      roles:
-       - pre-check
+  become: true
+  roles:
+    - pre-check
