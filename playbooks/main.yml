@@ -1,7 +1,7 @@
 ---
 - name: Ping all hosts
   hosts: all
-  gather_facts: no  # We don't need to gather facts for a simple ping
-  tasks:
-    - name: Ping the hosts
-      ping:
+  gather_facts: no
+  become: true
+  roles:
+    - pre-check
