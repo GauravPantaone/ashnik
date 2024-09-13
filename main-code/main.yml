@@ -1,0 +1,6 @@
+---
+- name: Apply the web role to all hosts
+  hosts: all
+  become: true
+  roles:
+    - pre-check
