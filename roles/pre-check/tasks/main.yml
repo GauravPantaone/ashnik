@@ -1,6 +1,4 @@
 ---
+# Ping task to check connectivity with hosts
 - name: Ping all hosts
-  hosts: all
-  tasks:
-    - name: Ensure hosts are reachable
-      ping:
+  ping:
