@@ -1,6 +1,6 @@
 ---
 - name: Ping all hosts
-  hosts: all
+  hosts: ubuntumachine
   gather_facts: no
   become: true
   roles:
